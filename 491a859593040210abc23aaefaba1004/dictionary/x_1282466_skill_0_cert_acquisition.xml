@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f790a91593840210abc23aaefaba107e" label="Cert Acquisition" max_length="40" name="x_1282466_skill_0_cert_acquisition" type="collection">
+        <element label="Certificate" max_length="32" name="certificate" reference="x_1282466_skill_0_se_certificate" type="reference"/>
+        <element label="Certified date" max_length="40" name="certified_date" type="glide_date"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Certification number" max_length="40" name="number" type="string"/>
+        <element label="ServiceNow release" max_length="40" name="servicenow_release" type="string"/>
+        <element label="Submission" max_length="32" name="submission" reference="x_1282466_skill_0_se_submission" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="certificate"/>
+        </index>
+        <index name="index2">
+            <element name="submission"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

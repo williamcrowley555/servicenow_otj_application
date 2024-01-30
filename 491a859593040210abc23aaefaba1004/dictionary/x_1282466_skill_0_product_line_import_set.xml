@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1ed0a9a993000210abc23aaefaba10ec" extends="sys_import_set_row" label="Product line Import Set" max_length="40" name="x_1282466_skill_0_product_line_import_set" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="52" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Product line" label="Product line" max_length="40" name="u_product_line" type="string"/>
+    </element>
+</database>

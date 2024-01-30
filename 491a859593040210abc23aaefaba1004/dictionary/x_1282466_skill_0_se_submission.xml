@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0a5d951193840210abc23aaefaba1038" label="Submission" max_length="40" name="x_1282466_skill_0_se_submission" type="collection">
+        <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" reference_qual="sys_idSTARTSWITH^EQ" reference_qual_condition="sys_idSTARTSWITH^EQ" type="reference" use_dynamic_default="true"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Level" max_length="32" name="level" reference="x_1282466_skill_0_se_level" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Opened by" max_length="32" name="opened_by" reference="sys_user" type="reference"/>
+        <element label="Score" max_length="40" name="score" type="integer"/>
+        <element choice="3" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Submitted" sequence="1" value="submitted"/>
+                <element inactive_on_update="false" label="Reviewed" sequence="2" value="reviewed"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Valid" max_length="40" name="valid" type="boolean"/>
+        <element label="Work notes" max_length="4000" name="work_notes" type="journal_input"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="level"/>
+        </index>
+        <index name="index3">
+            <element name="opened_by"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a000155d93040210abc23aaefaba108f" label="Product line" max_length="40" name="x_1282466_skill_0_se_product_line" text_index="true" type="collection">
+        <element label="Description" max_length="256" name="description" type="string"/>
+        <element display="true" label="Product line" max_length="40" name="product_line" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="product_line"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

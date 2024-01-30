@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c2bf95d193840210abc23aaefaba10c8" label="Skill Assessment" max_length="40" name="x_1282466_skill_0_se_skill_assessment" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" label="Proficiency level" max_length="40" name="proficiency_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="0 - Not Applicable" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="1 - Conceptual/Trained" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2 – Experienced" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3 – Expert" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4 – Guru" sequence="4" value="4"/>
+            </choice>
+        </element>
+        <element label="Skill" max_length="32" name="skill" reference="x_1282466_skill_0_se_skill" type="reference"/>
+        <element label="Submission" max_length="32" name="submission" reference="x_1282466_skill_0_se_submission" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="skill"/>
+        </index>
+        <index name="index2">
+            <element name="submission"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
