@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="c05c51dd93440210abc23aaefaba1036" label="Certificate" max_length="40" name="x_1282466_skill_0_se_certificate" text_index="true" type="collection">
-        <element label="Certificate name" max_length="256" name="certificate_name" type="string"/>
+        <element display="true" label="Certificate name" max_length="256" name="certificate_name" type="string"/>
         <element label="Product line" max_length="32" name="product_line" reference="x_1282466_skill_0_se_product_line" type="reference"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <index name="index">

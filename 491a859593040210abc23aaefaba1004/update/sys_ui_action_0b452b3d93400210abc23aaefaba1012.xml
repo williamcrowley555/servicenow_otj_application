@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>submitForReview</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>true</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Submit for Review</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var grSkillAssessment = new GlideRecord('x_1282466_skill_0_se_skill_assessment');
+grSkillAssessment.addQuery('submission', current.sys_id);
+grSkillAssessment.addQuery('proficiency_level', '!=', 'na');
+grSkillAssessment.query();
+
+var grCertAcquisition = new GlideRecord('x_1282466_skill_0_cert_acquisition');
+grCertAcquisition.addQuery('submission', current.sys_id);
+grCertAcquisition.query();
+
+if(grSkillAssessment.next() || grCertAcquisition.next()) {
+	current.state = 'submitted';
+	current.update();
+	gs.addInfoMessage('Submission record is updated into database successfully.');
+	action.setRedirectURL(current);
+} else {
+	gs.addErrorMessage('Submission record is updated into database fail.');
+	action.setRedirectURL(current);
+}
+
+
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-31 07:46:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0b452b3d93400210abc23aaefaba1012</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Submit for Review</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
+        <sys_update_name>sys_ui_action_0b452b3d93400210abc23aaefaba1012</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-31 10:29:08</sys_updated_on>
+        <table>x_1282466_skill_0_se_submission</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -4,7 +4,7 @@
         <element label="Certified date" max_length="40" name="certified_date" type="glide_date"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Certification number" max_length="40" name="number" type="string"/>
         <element label="ServiceNow release" max_length="40" name="servicenow_release" type="string"/>
-        <element label="Submission" max_length="32" name="submission" reference="x_1282466_skill_0_se_submission" type="reference"/>
+        <element label="Submission" max_length="32" name="submission" reference="x_1282466_skill_0_se_submission" reference_floats="true" type="reference"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <index name="index">
             <element name="certificate"/>

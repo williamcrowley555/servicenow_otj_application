@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1282466_skill_0_se_skill_assessment" version="2" view="">
+    <sys_ui_list parent="x_1282466_skill_0_se_submission" relationship="" sys_domain="global" table="x_1282466_skill_0_se_skill_assessment" version="2" view="rela">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>skill.product_line.product_line</element>
-            <list_id display_value="x_1282466_skill_0_se_skill_assessment" element="NULL" name="x_1282466_skill_0_se_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">13be3bf993c00210abc23aaefaba1047</list_id>
+            <element>skill.product_line</element>
+            <list_id display_value="x_1282466_skill_0_se_skill_assessment" element="NULL" name="x_1282466_skill_0_se_skill_assessment" parent="x_1282466_skill_0_se_submission" relationship="NULL" sys_domain="global" view="78e777f193c00210abc23aaefaba1013">62f7f33193c00210abc23aaefaba1083</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-31 09:30:01</sys_created_on>
-            <sys_id>13be3bf993c00210abc23aaefaba1048</sys_id>
+            <sys_created_on>2024-01-31 09:00:29</sys_created_on>
+            <sys_id>2af7f7f193c00210abc23aaefaba1073</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-31 09:30:01</sys_updated_on>
+            <sys_updated_on>2024-01-31 09:00:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>skill.skill_description</element>
-            <list_id display_value="x_1282466_skill_0_se_skill_assessment" element="NULL" name="x_1282466_skill_0_se_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">13be3bf993c00210abc23aaefaba1047</list_id>
+            <list_id display_value="x_1282466_skill_0_se_skill_assessment" element="NULL" name="x_1282466_skill_0_se_skill_assessment" parent="x_1282466_skill_0_se_submission" relationship="NULL" sys_domain="global" view="78e777f193c00210abc23aaefaba1013">62f7f33193c00210abc23aaefaba1083</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-31 09:30:01</sys_created_on>
-            <sys_id>1bbe3bf993c00210abc23aaefaba1048</sys_id>
+            <sys_created_on>2024-01-31 09:00:29</sys_created_on>
+            <sys_id>2ef7f7f193c00210abc23aaefaba1073</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-31 09:30:01</sys_updated_on>
+            <sys_updated_on>2024-01-31 09:00:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>proficiency_level</element>
-            <list_id display_value="x_1282466_skill_0_se_skill_assessment" element="NULL" name="x_1282466_skill_0_se_skill_assessment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">13be3bf993c00210abc23aaefaba1047</list_id>
+            <list_id display_value="x_1282466_skill_0_se_skill_assessment" element="NULL" name="x_1282466_skill_0_se_skill_assessment" parent="x_1282466_skill_0_se_submission" relationship="NULL" sys_domain="global" view="78e777f193c00210abc23aaefaba1013">62f7f33193c00210abc23aaefaba1083</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-31 09:30:01</sys_created_on>
-            <sys_id>1fbe3bf993c00210abc23aaefaba1048</sys_id>
+            <sys_created_on>2024-01-31 09:00:29</sys_created_on>
+            <sys_id>22f7f7f193c00210abc23aaefaba1074</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-31 09:30:01</sys_updated_on>
+            <sys_updated_on>2024-01-31 09:00:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -51,26 +51,26 @@
             <max_value>false</max_value>
             <min_value>false</min_value>
             <name>x_1282466_skill_0_se_skill_assessment</name>
-            <parent/>
+            <parent>x_1282466_skill_0_se_submission</parent>
             <position/>
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-31 09:30:01</sys_created_on>
+            <sys_created_on>2024-01-31 09:00:29</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>13be3bf993c00210abc23aaefaba1047</sys_id>
+            <sys_id>62f7f33193c00210abc23aaefaba1083</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_1282466_skill_0_se_skill_assessment</sys_name>
             <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
             <sys_policy/>
             <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
-            <sys_update_name>sys_ui_list_x_1282466_skill_0_se_skill_assessment_null</sys_update_name>
+            <sys_update_name>sys_ui_list_x_1282466_skill_0_se_skill_assessment_x_1282466_skill_0_se_submission_rela</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-31 09:30:01</sys_updated_on>
+            <sys_updated_on>2024-01-31 09:00:29</sys_updated_on>
             <sys_user/>
-            <view display_value="Default view" name="NULL">Default view</view>
+            <view display_value="Rela" name="rela">78e777f193c00210abc23aaefaba1013</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

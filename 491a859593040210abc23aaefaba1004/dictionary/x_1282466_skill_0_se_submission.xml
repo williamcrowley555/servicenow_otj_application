@@ -6,7 +6,7 @@
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Opened by" max_length="32" name="opened_by" reference="sys_user" type="reference"/>
         <element label="Score" max_length="40" name="score" type="integer"/>
-        <element choice="3" label="State" max_length="40" name="state" type="choice">
+        <element choice="3" default="draft" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
                 <element inactive_on_update="false" label="Submitted" sequence="1" value="submitted"/>
