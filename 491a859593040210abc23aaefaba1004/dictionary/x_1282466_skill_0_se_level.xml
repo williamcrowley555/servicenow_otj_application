@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="aa8a191d93440210abc23aaefaba1001" label="Level" max_length="40" name="x_1282466_skill_0_se_level" text_index="true" type="collection">
-        <element label="Level" max_length="40" name="level" type="string"/>
+        <element display="true" label="Level" max_length="40" name="level" type="string"/>
         <element label="Min Score" max_length="40" name="min_score" type="integer"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <index name="index">

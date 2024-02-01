@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="0a5d951193840210abc23aaefaba1038" label="Submission" max_length="40" name="x_1282466_skill_0_se_submission" type="collection">
+    <element audit="true" db_object_id="0a5d951193840210abc23aaefaba1038" label="Submission" max_length="40" name="x_1282466_skill_0_se_submission" type="collection">
         <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" reference_qual="sys_idSTARTSWITH^EQ" reference_qual_condition="sys_idSTARTSWITH^EQ" type="reference" use_dynamic_default="true"/>
         <element label="Description" max_length="40" name="description" type="string"/>
         <element label="Level" max_length="32" name="level" reference="x_1282466_skill_0_se_level" type="reference"/>
@@ -15,7 +15,7 @@
             </choice>
         </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <element label="Valid" max_length="40" name="valid" type="boolean"/>
+        <element default="true" label="Valid" max_length="40" name="valid" type="boolean"/>
         <element label="Work notes" max_length="4000" name="work_notes" type="journal_input"/>
         <index name="index">
             <element name="assigned_to"/>
