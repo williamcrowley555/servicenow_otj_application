@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>200</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-02 09:49:11</sys_created_on>
+        <sys_id>5f26daee93840210abc23aaefaba1017</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1282466_skill_0_se_submission</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
+        <sys_update_name>sys_db_view_table_5f26daee93840210abc23aaefaba1017</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-02 16:22:27</sys_updated_on>
+        <table>x_1282466_skill_0_se_submission</table>
+        <variable_prefix>sub</variable_prefix>
+        <view display_value="x_1282466_skill_0_approver_related_list_otj">e1c5daee93840210abc23aaefaba100b</view>
+        <where_clause/>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</application>
+        <file_path/>
+        <instance_id>8764b9db1b357550ba5ceb9b2d4bcb5d</instance_id>
+        <instance_name>dev186906</instance_name>
+        <name>sys_db_view_table_5f26daee93840210abc23aaefaba1017</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>200</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-02 09:49:11</sys_created_on><sys_id>5f26daee93840210abc23aaefaba1017</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1282466_skill_0_se_submission</sys_name><sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package><sys_policy/><sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope><sys_update_name>sys_db_view_table_5f26daee93840210abc23aaefaba1017</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-02 16:22:27</sys_updated_on><table>x_1282466_skill_0_se_submission</table><variable_prefix>sub</variable_prefix><view display_value="x_1282466_skill_0_approver_related_list_otj">e1c5daee93840210abc23aaefaba100b</view><where_clause/></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>-1358738709</payload_hash>
+        <record_name>x_1282466_skill_0_se_submission</record_name>
+        <reverted_from/>
+        <source>d0bb451993040210abc23aaefaba10fe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-02 16:22:27</sys_created_on>
+        <sys_id>ec50f7e6934c0210abc23aaefaba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d6aa0ed3f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-02 16:22:27</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>6450f7e6fb4c0210613e187ab4e46996</update_guid>
+        <update_guid_history>6450f7e6fb4c0210613e187ab4e46996:-1358738709,6b469622e2c40210388672c8729c5503:-799163828</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-02 17:50:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>18dd228876ea4abf97b07d162bc11fc9</sys_id>
+        <sys_metadata>5f26daee93840210abc23aaefaba1017</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1282466_skill_0_se_submission</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
+        <sys_scope_delete display_value="">064e552d9e1b439780c2d9c4e389cd21</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_5f26daee93840210abc23aaefaba1017</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_5f26daee93840210abc23aaefaba1017">ec50f7e6934c0210abc23aaefaba1096</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-02 17:50:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
