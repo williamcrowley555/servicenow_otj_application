@@ -3,9 +3,9 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -15,10 +15,12 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_1282466_skill_0_se_submission">stateCHANGESTOcompleted^EQ<item display_value="Completed" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="completed"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Populate skill assessments after insert</name>
+        <name>State is Completed</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,35 +32,37 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	var grSkill = new GlideRecord('x_1282466_skill_0_se_skill');
-	var grSkillAssessment = new GlideRecord('x_1282466_skill_0_se_skill_assessment');
+	var grSubmission = new GlideRecord('x_1282466_skill_0_se_submission');
+	// Find all records except current record
+	grSubmission.addQuery('sys_id', '!=', current.sys_id);
+	grSubmission.addQuery('assigned_to', current.assigned_to);
+	grSubmission.addQuery('valid', 'true');
+	grSubmission.query();
 
-	grSkill.query();
+	grSubmission.valid = 'false';
+	grSubmission.updateMultiple();
 
-	while(grSkill.next()) {
-		grSkillAssessment.newRecord();
-		grSkillAssessment.submission = current.sys_id;
-		grSkillAssessment.skill = grSkill.sys_id;
-		grSkillAssessment.insert();
-	}
+	current.valid = 'true';
+	current.update();
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-01-31 09:05:58</sys_created_on>
+        <sys_created_on>2024-02-02 04:43:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>53d87f3593c00210abc23aaefaba10d4</sys_id>
+        <sys_id>458dc5e293400210abc23aaefaba10ae</sys_id>
         <sys_mod_count>6</sys_mod_count>
-        <sys_name>Populate skill assessments after insert</sys_name>
+        <sys_name>State is Completed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
-        <sys_update_name>sys_script_53d87f3593c00210abc23aaefaba10d4</sys_update_name>
+        <sys_update_name>sys_script_458dc5e293400210abc23aaefaba10ae</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-02-02 06:11:01</sys_updated_on>
+        <sys_updated_on>2024-02-02 09:33:35</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=53d87f3593c00210abc23aaefaba10d4"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=458dc5e293400210abc23aaefaba10ae"/>
 </record_update>

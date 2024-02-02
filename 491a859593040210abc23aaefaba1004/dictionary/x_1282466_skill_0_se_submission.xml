@@ -15,7 +15,7 @@
             </choice>
         </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <element default="true" label="Valid" max_length="40" name="valid" type="boolean"/>
+        <element label="Valid" max_length="40" name="valid" type="boolean"/>
         <element label="Work notes" max_length="4000" name="work_notes" type="journal_input"/>
         <index name="index">
             <element name="assigned_to"/>

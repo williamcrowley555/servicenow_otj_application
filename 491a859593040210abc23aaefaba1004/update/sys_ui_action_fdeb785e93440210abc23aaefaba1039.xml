@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state == 'reviewed'</condition>
+        <condition>(gs.getUser().isMemberOf('2c29d55993440210abc23aaefaba10ec') &amp;&amp; current.state == 'submitted') || (gs.getUser().isMemberOf('d2691d5993440210abc23aaefaba10fe') &amp;&amp; current.state == 'reviewed')</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -27,13 +27,23 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Approve Submission</name>
+        <name>Approve</name>
         <onclick/>
         <order>200</order>
-        <script><![CDATA[current.state = 'completed';
-current.update();
-gs.addInfoMessage('Submission is approved.');
-action.setRedirectURL(current);]]></script>
+        <script><![CDATA[// Group: Skill Evaluation PM
+if (gs.getUser().isMemberOf('2c29d55993440210abc23aaefaba10ec') && current.state == 'submitted') {
+    current.state = 'reviewed';
+    current.update();
+    gs.addInfoMessage('Submission is approved by Skill Evaluation PM Group Member.');
+    action.setRedirectURL(current);
+} 
+// Group: Skill Evaluation COE
+else if (gs.getUser().isMemberOf('d2691d5993440210abc23aaefaba10fe') && current.state == 'reviewed') {
+    current.state = 'completed';
+    current.update();
+    gs.addInfoMessage('Submission is approved by Skill Evaluation COE Group Member.');
+    action.setRedirectURL(current);
+}]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -44,15 +54,15 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fdeb785e93440210abc23aaefaba1039</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Approve Submission</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
         <sys_update_name>sys_ui_action_fdeb785e93440210abc23aaefaba1039</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-02-01 09:00:36</sys_updated_on>
+        <sys_updated_on>2024-02-02 03:50:00</sys_updated_on>
         <table>x_1282466_skill_0_se_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
