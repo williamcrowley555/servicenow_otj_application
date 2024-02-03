@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field">
+    <sys_db_view_table_field action="INSERT_OR_UPDATE">
+        <field>description</field>
+        <sys_class_name>sys_db_view_table_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-03 03:16:26</sys_created_on>
+        <sys_id>c5d5063293084210abc23aaefaba10ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>description</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
+        <sys_update_name>sys_db_view_table_field_c5d5063293084210abc23aaefaba10ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-03 03:16:26</sys_updated_on>
+        <table>x_1282466_skill_0_se_submission</table>
+        <view_table display_value="x_1282466_skill_0_se_submission">4aa5423293084210abc23aaefaba1025</view_table>
+    </sys_db_view_table_field>
+</record_update>
