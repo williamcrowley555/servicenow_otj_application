@@ -11,17 +11,21 @@
 UserGroupAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
     isCurrentUserInAnyGroup: function() {
-        var userID = gs.getUserID();
-        var groupIDs = this.getParameter('sysparm_group_ids').split(',');
-		gs.info('userID' + userID);
-		gs.info('groupIDs' + groupIDs);
+        if(gs.hasRole('admin')) {
+			return true;
+		} else {
+			var userID = gs.getUserID();
+			var groupIDs = this.getParameter('sysparm_group_ids').split(',');
+			gs.info('userID' + userID);
+			gs.info('groupIDs' + groupIDs);
 
-        var grGroupMember = new GlideRecord('sys_user_grmember');
-        grGroupMember.addQuery('user', userID);
-        grGroupMember.addQuery('group', 'IN', groupIDs);
-        grGroupMember.query();
-		
-        return grGroupMember.hasNext();
+			var grGroupMember = new GlideRecord('sys_user_grmember');
+			grGroupMember.addQuery('user', userID);
+			grGroupMember.addQuery('group', 'IN', groupIDs);
+			grGroupMember.query();
+			
+			return grGroupMember.hasNext();
+		}
     },
     type: 'UserGroupAjax'
 });]]></script>
@@ -29,13 +33,13 @@ UserGroupAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-02-05 04:08:11</sys_created_on>
         <sys_id>a9426ceb93808210abc23aaefaba10e6</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>UserGroupAjax</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
         <sys_update_name>sys_script_include_a9426ceb93808210abc23aaefaba10e6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-02-05 06:40:32</sys_updated_on>
+        <sys_updated_on>2024-02-05 08:23:56</sys_updated_on>
     </sys_script_include>
 </record_update>
