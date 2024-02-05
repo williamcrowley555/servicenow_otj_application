@@ -8,14 +8,14 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>DIRECT</link_type>
         <map_page/>
         <mobile_title>All Skill Assessment</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_1282466_skill_0_se_submission</name>
         <order>300</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>$pa_dashboard.do?sysparm_dashboard=a18f9b0b930c0210abc23aaefaba102d&amp;sysparm_tab=80ef134b930c0210abc23aaefaba10a6&amp;sysparm_cancelable=true&amp;sysparm_editable=undefined&amp;sysparm_active_panel=false</query>
         <report/>
         <roles>x_1282466_skill_0.se_admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9eb3551693c40210abc23aaefaba1061</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>SE Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
         <sys_update_name>sys_app_module_9eb3551693c40210abc23aaefaba1061</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-02-01 10:19:49</sys_updated_on>
+        <sys_updated_on>2024-02-04 04:48:07</sys_updated_on>
         <timeline_page/>
         <title>SE Dashboard</title>
         <uncancelable>false</uncancelable>

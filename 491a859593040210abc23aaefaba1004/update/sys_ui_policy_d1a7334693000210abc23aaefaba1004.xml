@@ -18,7 +18,19 @@
 
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	
+	// Groups: Skill Evaluation PM, Skill Evaluation COE
+    var groupIds = '2c29d55993440210abc23aaefaba10ec,d2691d5993440210abc23aaefaba10fe';
+
+    var ga = new GlideAjax('UserGroupAjax');
+    ga.addParam('sysparm_name', 'isCurrentUserInAnyGroup');
+    ga.addParam('sysparm_group_ids', groupIds);
+
+    ga.getXMLAnswer(function(answer) {
+        // Hide Approver related list
+        if (answer == 'false') {
+            g_form.hideRelatedList('REL:e857da6293c40210abc23aaefaba10e9');
+        }
+    });
 }]]></script_true>
         <set_values/>
         <short_description>When Submission State is not Draft</short_description>
@@ -28,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d1a7334693000210abc23aaefaba1004</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>When Submission State is not Draft</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_1282466_skill_0">491a859593040210abc23aaefaba1004</sys_package>
@@ -36,7 +48,7 @@
         <sys_scope display_value="Skill Evaluation">491a859593040210abc23aaefaba1004</sys_scope>
         <sys_update_name>sys_ui_policy_d1a7334693000210abc23aaefaba1004</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-02-01 04:34:48</sys_updated_on>
+        <sys_updated_on>2024-02-05 06:46:44</sys_updated_on>
         <table>x_1282466_skill_0_se_submission</table>
         <ui_type>0</ui_type>
         <view/>

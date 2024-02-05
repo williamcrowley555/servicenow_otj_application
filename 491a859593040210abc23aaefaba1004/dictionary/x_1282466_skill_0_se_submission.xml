@@ -4,7 +4,7 @@
         <element label="Description" max_length="40" name="description" type="string"/>
         <element label="Level" max_length="32" name="level" reference="x_1282466_skill_0_se_level" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Opened by" max_length="32" name="opened_by" reference="sys_user" type="reference"/>
+        <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Opened by" max_length="32" name="opened_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element label="Score" max_length="40" name="score" type="integer"/>
         <element choice="3" default="draft" label="State" max_length="40" name="state" type="choice">
             <choice>
